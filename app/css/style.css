@@ -1,0 +1,79 @@
+
+@font-face {
+  font-family: "freight-text";
+  src: url(fonts/freight-text-book.ttf);
+}
+
+@font-face {
+  font-family: "antique-oakland-bold";
+  src: url(fonts/antique-oakland-bold.ttf);
+}
+
+p {
+	font-style: normal;
+	font-family: "freight-text", Georgia;
+	letter-spacing: 0.01rem;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+.top-img-column {
+	height: 400px;
+}
+
+.ui.header.title {
+	font-family: "freight-text", Georgia;
+	font-size: 35px;
+	margin-bottom: 2px;
+}
+
+.ui.header.subtitle {
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0em;
+	padding: 0em;
+	line-height: 1.2;
+	color: rgba(0, 0, 0, 0.5);
+	font-style: normal;
+	font-family: Georgia;
+	letter-spacing: 0.01rem;
+}
+
+.ui.right.floated.image {
+	margin-top: 1.9em;
+}
+
+.ui.grid.top-menu {
+	padding-bottom: 5px;
+}
+
+.ui.grid > .row {
+	margin-top: -0.5%;
+}
+
+.ui.pointing.menu .item {
+	font-size: 18px;
+}
+
+.maincontent {
+	padding-top: 10px;
+}
+
+.name {
+	font-size: 20px;
+	font-style: normal;
+	font-family: Georgia;
+	letter-spacing: 0.01rem;
+	font-weight: 400;
+	font-size: 45px;
+	line-height: 1.2;
+}
+
+.red {
+	color: #000;
+	font-weight: 700;
+	cursor: pointer;
+	font-family: "antique-oakland-bold", Georgia;
+}
