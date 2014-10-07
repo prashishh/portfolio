@@ -9,7 +9,7 @@
   src: url(fonts/antique-oakland-bold.ttf);
 }
 
-p {
+p, a {
 	font-style: normal;
 	font-family: "freight-text", Georgia;
 	letter-spacing: 0.01rem;
@@ -17,6 +17,11 @@ p {
 	font-size: 22px;
 	line-height: 1.4;
 	text-align: justify;
+}
+
+a {
+	text-decoration: underline;
+	color: #000;
 }
 
 .top-img-column {
@@ -76,4 +81,34 @@ p {
 	font-weight: 700;
 	cursor: pointer;
 	font-family: "antique-oakland-bold", Georgia;
+}
+
+.centerimage {
+	margin:0 auto;
+}
+
+.ui.horizontal.divider {
+	margin-bottom: 40px;
+}
+
+.ui.medium.image.paycliplogo {
+	width: 100px ;
+}
+
+.ui.medium.image.payclip_img {
+	width: 200px ;
+	margin-top: 0px;
+}
+
+.ui.medium.image.remologo {
+	width: 300px ;
+}
+
+.ui.medium.image.miclogo {
+	width: 350px ;
+	margin-bottom: 15px;
+}
+
+.ui.medium.image.scooplogo {
+	width: 700px ;
 }
