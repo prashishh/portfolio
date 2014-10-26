@@ -15,14 +15,15 @@
   </head>
 
   <body>
-  	<div class="ui page grid segment top-menu">
+
+  	<div id="top_link" class="ui page grid segment top-menu">
 			<div class="ui secondary pointing menu floated right">
 				<div class="header item">Prashish Rajbhandari</div>
-				<a class="active item">Now</a>
-				<a class="item">Experience</a>
-				<a class="item">Projects</a>
-				<a class="item">Life</a>
-				<a class="item">Contact</a>
+				<a class="active item">Here</a>
+				<a id="expr_btn" href="#expr_link" class="item">Experience</a>
+				<a id="project_btn" href="#project_link"  class="item">Projects</a>
+				<a id="life_btn" href="#life_link"  class="item">Life</a>
+				<a id="contact_btn" href="#contact_link" class="item">Contact</a>
 			</div>
 		</div>
 		
@@ -48,8 +49,8 @@
 		<div class="ui page grid">
 			<div class="row">
 			<div class="ui two wide column"></div>
-			<div class="ui twelve wide center aligned column">
-				<p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
+			<div class="ui twelve wide column centeraligned">
+				<p>I believe that inspiration is everywhere around us, one just needs to look at them from an open perspective. </p>
 
 			</div>
 			<div class="ui two wide column"></div>
@@ -59,6 +60,19 @@
 		</div>
 
 		<div class="ui stackable grid maincontent">
+
+
+			<div id="expr_link" class="row">
+				<div class="ui one wide column"></div>
+				<div class="ui fourteen wide column">
+					<div class="row">
+						<div class="ui sixteen wide column">
+							<div class="ui huge header top-title experience"><span class="text">Experience</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="ui one wide column"></div>
+			</div>
 
 			<div class="row">
 				<div class="ui two wide column"></div>
@@ -71,28 +85,32 @@
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row" id="payclip_link">
 						<div class="ui huge header title">PayClip</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Redwood City, California</div>
+							<div class="ui medium header subtitle">Opportunity.</div>
 						</div>
 					</div>
 
 					<div class="row">
-						<p>In the summer of 2014, I was a part of an incredible team whose vision was to revolutionize the payment industry in South America. I was easily convinced by PayClip's ambition to solve real problems, their impact and sheer amount of technical challenges in the payment space.</p>
+					<div class="payclip_summary">
+						<p>In the summer of 2014, I was a part of an incredible team whose vision was to revolutionize the payment industry in South America. I was easily convinced by PayClip's ambition to solve real problems, their impact and the sheer amount of technical challenges in the payment space.</p>
 
-						<p>The experience was the best learning experience I've ever had. At the heart of Silicon Valley, I had the opportunity to meet and learn from the very best. I ended up being all over the place from design to development with full ownership to three major projects at PayClip in a short three month interval.</p>
-			  		
+						<p>At the heart of Silicon Valley, I had the <a href="http://prashish.me/2014/04/30/why-am-i-here/" target="_blank">opportunity</a> to meet and learn from the very best. The experience was the best learning experience I've ever had. I ended up being all over the place from design to development with full ownership to three major projects at PayClip in a short three months interval.</p>
+		  		</div>
 			   		
-			   		<p class="payclip_more">
+		   		<p class="payclip_more">
+			   		Every project that I worked on was written using the technology stack that I truly believe in - <a href="http://en.wikipedia.org/wiki/Open_Web_Platform" target="_blank">Open Web</a>. I consider myself very lucky in that aspect. I spent a large amount of time designing and building architectures and features.<br><br> 
 
-							<img class="ui medium right floated image payclip_img" src="app/images/payclip_3.png" />
+			   		I used quick prototyping approach followed by a lot of refactoring and testing. I mades sure I had a lot of development cycles, where I refactored almost half the entire codebase in less than two weeks. I could literally feel the evolution of my code from the first iteration to the final production code.<br><br>
 
-			   			I can go and describe the many technical aspects of the work that I did there, but the experience and lessons that I learnt from my internships were the most valuable thing ever. It taught me to be open to options, to have that constant thirst for learning and to always do something meaningful and with value. I spent a large amount of time in designing the best technology stack, writing features and testing. I could feel the evolution of the codebase from the first iteration to the final production code. Every project that I worked had lots of iterations, where I refactored almost the entire code in less than two weeks after the first push. 
-			   		</p>
+
+			   		I can go and describe the many <a href="#">technical challenges</a> I faced during my internship, but the lessons I learnt were the most valuable thing ever. I ended up going to many <a href="http://prashish.me/2014/05/16/code-for-india-hackathon/" target="_blank">hackathons</a>, <a href="https://twitter.com/prashishh/status/479085622745776128" target="_blank">meetups</a>, <a href="https://twitter.com/prashishh/status/492562739223465984" target="_blank">talks</a> and recreational events which included - <a href="https://twitter.com/prashishh/status/472112101574459392" target="_blank">snakes</a>, <a href="https://twitter.com/prashishh/status/473195767834767360" target="_blank">biking</a>, <a href="https://twitter.com/prashishh/status/463029199091953664" target="_blank">football</a>, <a href="https://twitter.com/prashishh/status/480578661741895681" target="_blank">food</a>, and more <a href="https://twitter.com/prashishh/status/481274066502815745" target="_blank">food</a> - during my short stay in the Bay Area. 
+
+		   		</p>
 
 			   		<div class="ui horizontal text divider ">
-			   			<span class="payclip_button red">More</span>
+			   			<span class="payclip_button red" href="#payclip_link">More</span>
 						</div>
 					</div>
 				</div>
@@ -111,25 +129,38 @@
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row" id="remo_link">
 						<div class="ui huge header title">Mozilla</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Join the Payment Revolution</div>
+							<div class="ui medium header subtitle">Passion.</div>
 						</div>
 					</div>
 
 					<div class="row">
+					<div class="remo_summary">
 			  		
-			  		<p>I've always been a strong advocate of the Open Web. It has been something special for me to be part of an organization whose sole mission is to promote openness, innovation and opportunity in the web.</p> 
+			  		<p>It is something special to be part of an organization whose sole mission is to promote openness, innovation and opportunity in the web. Being a <a href="http://prashish.me/2013/07/25/my-first-month-as-a-mozilla-rep/" target="_blank">Mozilla Rep</a> has provided me the perfect platform to motivate myself to collaborate and contribute to the Mozilla Community.</p> 
 
-			  		<p>Being a Mozilla Rep has provided me the perfect platform to motivate myself to contribute to the greater community. It has been inch perfect to work and collaborate with amazing groups of people to impact lives of millions of people.</p>
+			  		<p>I have always been a strong advocate of the Open Web. I'm mostly involved with Mozilla by either writing code, volunteering in events, <a href="http://aoscacme.wordpress.com/about/" target="_blank">helping</a> local communities or <a href="https://yabbly.com/ama/inm6vrzy/ill-be-traveling-across-48-states-to-share-mozillas-story?sid=ajs5mzhy#question/cxjs8ieb/response/ajs5mzhy" target="_blank">encouraging</a> people to contribute. And also, I <a href="http://mozdrive.com/about-mozdrive/mozdrive/" target="_blank">drove around the US</a> to raise awareness about Mozilla and it's mission.</p>
+
+		  		</div>
 
 			   		<p class="remo_more">
-			   			Mozilla provides you the feeling of <i>doing good</i>, be it <a href="http://prashish.me/2014/07/28/mozdrive/">driving around United States</a> to <a href="https://medium.com/@prashishh/the-plan-after-mozdrive-24aacb9cf2d5">share the true story about Mozilla</a>, <a href="http://prashish.me/2013/07/25/my-first-month-as-a-mozilla-rep/">organizing Webmaker activities</a>, <a href="http://prashish.me/2013/11/10/experience-at-mozilla-festival-2013/">attending the largest gathering of Makers</a> or <a href="http://prashish.me/tag/mozilla/">discuss the future plans to support Mozilla initiatives in North America</a>. You feel you are part of this global movement where we are striving in all gears to advance the state of the web and keep it open.
+			   			<img class="ui image medium right floated nomargin" src="app/images/prashish_mozilla.jpg" />
+
+			   			Mozilla gives you the feeling of <i>doing good</i> and being a part of an amazing community of technologists, innovators and doers. It perfectly fits my lifetime goal to improve lives of as many people as possible and make the world a better place. I'm proud to be part of Mozilla and contribute in anyway I can.<br><br> 
+
+			   			<a class="no-text-decor" href="https://twitter.com/MitchellBaker/status/494670848364515328" target="_blank"><img class="ui image nomargin mozdrive-tweet centerimage" src="app/images/mozdrive_tweet.png" /></a>
+
+			   			My craziest project with Mozilla was undoubtedly <a href="http://prashish.me/2014/07/28/mozdrive/" target="_blank">traveling</a> around the United States to <a href="https://medium.com/@prashishh/how-mozdrive-started-af56d4be8a82" target="_blank">share</a> the true story about Mozilla and <a href="https://medium.com/@prashishh/the-plan-after-mozdrive-24aacb9cf2d5" target="_blank">committing</a> to publish an ebook.<br><br>
+
+			   			I believe I have the coolest non-job on the planet where I am either <a href="http://instagram.com/p/uULpH2lZo-/" target="_blank">collaborating</a>, <a href="http://prashish.me/2013/07/25/my-first-month-as-a-mozilla-rep/" target="_blank">organizing</a> Webmaker activities, <a href="http://prashish.me/2013/11/10/experience-at-mozilla-festival-2013/" target="_blank">attending</a> the largest gathering of Makers or <a href="http://prashish.me/tag/mozilla/" target="_blank">discussing</a> future plans to support Mozilla initiatives in North America.<br><br> 
+
+			   			You feel you are part of this global movement where everyone is working to advance the state of the web and keeping it open.
 			   		</p>
 
 			   		<div class="ui horizontal text divider ">
-			   			<span class="remo_button red">More</span>
+			   			<span class="remo_button red" href="#remo_link">More</span>
 						</div>
 					</div>
 				</div>
@@ -148,29 +179,33 @@
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row" id="mic_link">
 						<div class="ui huge header title">Microsoft Innovation Center</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Kathmandu, Nepal</div>
+							<div class="ui medium header subtitle">Growth.</div>
 						</div>
 					</div>
 
 					<div class="row">
 			  		
-			  		<p>The internship at MIC was a special treat to my long term passion to foster innovation and growth in the local communities in Nepal. I consider myself super lucky to be able to contribute both as a facilitator and developer in my short period as an intern.</p>
+			  		<p>The internship at MIC was a special treat to my long term goal to foster innovation and growth in local communities in Nepal. I consider myself super lucky to be able to contribute both as a facilitator and developer in my short period as an intern.</p>
 
-			  		<p>The time I spent there was a mix of creating things of value, inspiring students, promoting technology and having fun. I was able to ship multiple projects, and also fascilitate sessions to promote open web technologies in Microsoft products.</p>
+			  		<p>The time I spent at MIC was a mix of creating things, motivating students, promoting technology and having fun. I was able to ship multiple projects, and also fascilitate talks to promote open web in Microsoft technologies.</p>
 
 			   		<p class="mic_more">
+			   			
+			   			<img class="ui image huge right floated nomargin" src="app/images/mic_project_2.png" />
 
-			   			I was able to ship multiple projects which included a date converter (Web, Windows 8 and Windows Phone) and a metrics dashboard. They were later released as open-source projects.
+			   			I took ownership in building a <i>Dashboard framework</i> that was real-time, reusable, flexible and used the latest cutting edge technology. It was built such that any team could setup their own dashboard environment using this framework.<br><br>
 
+			   			We were able to ship Nepali-English date converter App in both Windows 8 and Windows Phone platforms. The date converter was later ported to JavaScript and released as <a href="https://github.com/prashishh/NepToEngDateConverter" target="_blank">open-source</a>. It was then used for various other apps like <a href="https://github.com/prashishh/NepaliCalendar" target="_blank">Nepali Calender</a>. A public Web API was also built from it. <br><br>
 
-			  			I was responsible to fascilitate three 5-days session to build and promote Microsoft Office Apps using the open web technologies to over 200 students. I was part of a team which shipped Nepali-English date converter application in both Windows 8 and Windows Phone platforms. They were later released as open source. We were a part of a global world record to faciliate and spread the word of cloud computing in Kathmandu region.
+			   			<img class="ui image medium right floated nomargin" src="app/images/prashish_mic_photo_1.jpg" />
+			  			I was responsible to fascilitate three 5-day sessions to build Microsoft Office Apps using the open web technologies. Hundreds of Office Apps were built by students during the training sessions. I was also part of GWAB (Global Windows Azure Bootcamp) team to faciliate and spread the word of cloud computing in Kathmandu region.<br><br>
 			   		</p>
 
 			   		<div class="ui horizontal text divider ">
-			   			<span class="mic_button red">More</span>
+			   			<span class="mic_button red" href="#mic_link">More</span>
 						</div>
 					</div>
 				</div>
@@ -189,30 +224,48 @@
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row" id="fortystones_link">
 						<div class="ui huge header title">fortystones</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Join the Payment Revolution</div>
+							<div class="ui medium header subtitle">Youth.</div>
 						</div>
 					</div>
 
 					<div class="row">
 			  		
-			  		<p>fortystones was a brain-child of five sophomore engineering students to set ourselves a platform to grow and share our knowledge to the world. Little did we know that our amaetur platform would touch lives of over 550,000 people across 12,000 cities worldwide and 216 countries.</p>
+			  		<p>fortystones was a brain-child of five freshmen engineering students to set ourselves a platform to grow and share our knowledge to the world. Our amatur platform later touched lives of over 550,000 people across 216 countries and 12,000 cities worldwide.</p>
 
-			  		<p>From writing articles, tutorials and reviews to building श्री, we worked very hard to expand our horizons. With fortystones, we, as young students, tried to make a small impact in the world. Take it as a success or failure, but I am very happy and satisfied that fortystones was an invaluable part of my undergraduate life.</p>
+			  		<p>From writing articles, tutorials and reviews to building <a href="http://prashish.me/2011/07/28/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80-nepali-unicode/" target="_blank"> श्री</a>, we, as young students, tried to make a tiny-winy impact in the world. No matter <a href="http://prashish.me/2014/07/26/farewell-fortystones/" target="_blank">what happened</a>, I am extremely happy that fortystones was an invaluable part of my undergraduate life.</p>
 
 			   		<p class="fortystones_more">
-			   			I can go on and describe the many technical aspects of the work that I did there, but the experience and lessons that I learnt from my internships were the most valuable thing ever. It taught me to be open to options, to have that constant thirst for learning and to always do something meaningful and with value. I spent a large amount of time in designing the best technology stack, writing features and testing. I could feel the evolution of the codebase from the first iteration to the final production code. Every project that I worked had lots of iterations, where I refactored almost the entire code in less than two weeks after the first push. 
+			   			<img class="ui image medium right floated nomargin" src="app/images/fortystones_screenshot.jpg" />
+
+			   			We are on this planet for a reason and the interconnectivity of the web creates the opportunity to help create a better society. We understood this early, and hence the web saw the birth of a small initiative called - fortystones.<br><br>
+
+			   			The basic idea was to set a platform for ourselves where we could share our knowledge and information with the world. Each post was called a stone and each stone was ‘engraved’ with information that we found interesting or fun.<br><br> 
+
+			   			We weren’t professionals by any means and we never considered ourselves experts in a field. We were just a bunch of guys determined to learn and share. And so we did.
 			   		</p>
 
 			   		<div class="ui horizontal text divider ">
-			   			<span class="fortystones_button red">More</span>
+			   			<span class="fortystones_button red" href="#fortystones_link">More</span>
 						</div>
 					</div>
 				</div>
 				
 				<div class="ui two wide column"></div>
+			</div>
+
+			<div class="row">
+				<div class="ui one wide column"></div>
+				<div class="ui fourteen wide column">
+					<div class="row" id="project_link">
+						<div class="ui sixteen wide column">
+							<div class="ui huge header top-title projects"><span class="text">Projects</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="ui one wide column"></div>
 			</div>
 
 			<div class="row">
@@ -223,27 +276,30 @@
 					<div class="row">
 						<div class="ui huge header title">Scoop</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Join the Payment Revolution</div>
+							<div class="ui medium header subtitle">Excitement.</div>
 						</div>
 					</div>
 
 					<div class="row">
-
-						<img class="ui medium right floated image" src="app/images/scoop_1.png">
 			  	
-			  		<p>I have always been fascinated by information sharing and social networking. Scoop was an experiment to play around with both of them during my undergraduate days.</p>
+			  		<p>I have always been fascinated by information and social networking. Scoop was an experiment to play around with both of them during my undergraduate days.</p>
 
-			  		<p>Scoop was a platform for students of IIITA to share any information, trending news and articles or stories within the IIITA Community. The idea was to share knowledge within their group.</p>
+						<img class="ui medium image centerimage scoopbanner" src="app/images/scoop_1.png">
 
+			  		<p>Scoop was a <a href="http://prashish.me/2011/09/08/the-launch-of-scoop-information-sharing-platform-for-iiita-community/" target="_blank">platform for students</a> to share any information, trending news, articles or stories within the university. This was before time when facebook was <i>'the thing'</i> and groups weren't omnipresent. Pushing emails to everyone isn't ideal if you want to share focused news. Scoop solved this.</p>
 
+			   		<div class="ui divider ">
+						</div>
 
+			  		<!--
 			   		<p class="scoop_more">
-			   			This was before time when facebook was 'the thing' and facebook groups were present(?), but tried to remove the tradional way of pushing emails to everyone, but instead share in Scoop, where everyone is regularly updated about the happenings.
+			   			This was before time when facebook was 'the thing' and groups weren't omnipresent.  but tried to remove the tradional way of pushing emails to everyone, but instead share in Scoop, where everyone is regularly updated about the happenings.
 			   		</p>
 
 			   		<div class="ui horizontal text divider ">
 			   			<span class="scoop_button red">More</span>
 						</div>
+						-->
 					</div>
 				</div>
 				
@@ -258,25 +314,29 @@
 					<div class="row">
 						<div class="ui huge header title">Shrii</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Join the Payment Revolution</div>
+							<div class="ui medium header subtitle">Value.</div>
 						</div>
 					</div>
 
 					<div class="row">
 			  		
-						<img class="ui medium right floated image" src="app/images/shrii_nepali_unicode.png">
+						<img class="ui medium right floated image sidepic	" src="app/images/shrii_nepali_unicode.png">
 
-			  		<p>Shrii was built less as a hobby project than a desire to build something that I regularly use. Instead of using just-another-transliterate, I and @rabi_shah decided to build a phonetic translator that converts English text to देवनागरी script.</p>
+			  		<p>Shrii was built less as a hobby project and more as a desire to build something that I regularly use. Instead of using just-another-transliterate, I and <a href="https://twitter.com/rabi_shah" target="_blank">@rabi_shah</a> decided to build a phonetic translator that converts English text to देवनागरी script.</p>
 
-			  		<p></p>
+			  		<p>The result? It was used by thousands of people, <a href="https://github.com/prashishh/Devanagari-Unicode/network" target="_blank">forked</a> and used in other Nepali applications.</p>
 
+			   		<div class="ui divider ">
+						</div>
+
+			  		<!--
 			   		<p class="shrii_more">
-			   			I can go on and describe the many technical aspects of the work that I did there, but the experience and lessons that I learnt from my internships were the most valuable thing ever. It taught me to be open to options, to have that constant thirst for learning and to always do something meaningful and with value. I spent a large amount of time in designing the best technology stack, writing features and testing. I could feel the evolution of the codebase from the first iteration to the final production code. Every project that I worked had lots of iterations, where I refactored almost the entire code in less than two weeks after the first push. 
 			   		</p>
 
 			   		<div class="ui horizontal text divider ">
 			   			<span class="shrii_button red">More</span>
 						</div>
+						-->
 					</div>
 				</div>
 				
@@ -291,23 +351,27 @@
 					<div class="row">
 						<div class="ui huge header title">Graph Database</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Join the Payment Revolution</div>
+							<div class="ui medium header subtitle">Ambition.</div>
 						</div>
 					</div>
 
 					<div class="row">
 			  		
-			  		<p>Graph Database was developed out of the curiosity of the then new concept of NoSQL Graph databases esp. Neo4j. The curiosity turned out to be so powerful that I decided to try to <b>make</b> one instead.</p>
+			  		<p>Graph Database was completely developed out of curiosity of the then new concept of NoSQL Graph databases esp. Neo4j. The curiosity turned out to be so strong that I decided to try to <b>make</b> one instead.</p>
 
-			  		<p>Given the timeframe and experience, it was quite an ambitious project as my first mini-project, but we did eventually publish a paper, and was also cited by some other.</p>
+			  		<p>Given the timeframe and experience, it was quite an ambitious project as our first <a href="http://prashish.me/2011/10/18/the-graph-database-the-preview/" target="_blank">mini-project</a>, but we eventually did <a href="http://www.ipcsit.com/vol41/031-ICSCA2012-S10019.pdf" target="_blank">publish a paper</a>, and the paper was cited by some other papers (<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.402.5809" target="_blank">I</a>, <a href="http://www.ravinjain.in/pdf/Overview%20of%20Popular%20Graph%20Databases.pdf" target="_blank">II</a>) too. :)</p>
 
-			   		<p class="fortystones_more">
-			   			I can go on and describe the many technical aspects of the work that I did there, but the experience and lessons that I learnt from my internships were the most valuable thing ever. It taught me to be open to options, to have that constant thirst for learning and to always do something meaningful and with value. I spent a large amount of time in designing the best technology stack, writing features and testing. I could feel the evolution of the codebase from the first iteration to the final production code. Every project that I worked had lots of iterations, where I refactored almost the entire code in less than two weeks after the first push. 
+			   		<div class="ui divider ">
+						</div>
+
+			  		<!--
+			   		<p class="graph_more">
 			   		</p>
 
 			   		<div class="ui horizontal text divider ">
-			   			<span class="fortystones_button red">More</span>
+			   			<span class="graph_button red">More</span>
 						</div>
+						-->
 					</div>
 				</div>
 				
@@ -322,23 +386,144 @@
 					<div class="row">
 						<div class="ui huge header title">Text-based Dialogue System</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Join the Payment Revolution</div>
+							<div class="ui medium header subtitle">Exploration.</div>
 						</div>
 					</div>
 
 					<div class="row">
 			  		
-			  		<p>Think of <i>Siri</i> without voice commands. That's what we tried to build in my seventh semester. Again, without experience in Natural Language Processing, we dived into this topic totally out of curiosity and thrill to do something exciting.</p>
+			  		<p>Think of <i>Siri</i> without voice commands. That's what we tried to <a href="http://prashish.me/2014/02/28/a-text-based-dialogue-system/" target="_blank">build in our seventh semester</a>. Again, without any experience in Natural Language Processing, we dived into this topic totally out of curiosity to do something new and exciting.</p>
 
-			  		<p>The idea was that the system would understand and respond to a user's question. It involved understanding user queries which was in the form of natural English language, using various tools to understand the semantic of the sentence, and then queried into the ontology for the necessary result, formed response and gave out response.</p>
+			  		<p>The idea was to build a system that would understand and respond to a user's question. It involved understanding the semantic of a sentence, which was in the form of natural English language, by various tools, then querying into an ontology for the necessary result and forming a response to the user.</p>
 
-
-			   		<p class="fortystones_more">
-			   			I can go on and describe the many technical aspects of the work that I did there, but the experience and lessons that I learnt from my internships were the most valuable thing ever. It taught me to be open to options, to have that constant thirst for learning and to always do something meaningful and with value. I spent a large amount of time in designing the best technology stack, writing features and testing. I could feel the evolution of the codebase from the first iteration to the final production code. Every project that I worked had lots of iterations, where I refactored almost the entire code in less than two weeks after the first push. 
+			   		<div class="ui divider ">
+						</div>
+			  		<!--
+			   		<p class="dialoguesys_more">
 			   		</p>
 
 			   		<div class="ui horizontal text divider ">
-			   			<span class="fortystones_button red">More</span>
+			   			<span class="dialoguesys_button red">More</span>
+						</div>
+						-->
+					</div>
+				</div>
+				
+				<div class="ui two wide column"></div>
+			</div>
+
+			<div class="row">
+				<div class="ui two wide column"></div>
+				
+				<div class="ui twelve wide column">
+
+					<div class="row">
+						<div class="ui huge header title">Semantic Web in MIS</div>
+						<div class="sub header">
+							<div class="ui medium header subtitle">Shipping.</div>
+						</div>
+					</div>
+
+					<div class="row">
+			  		
+			  		<p>The idea behind this project was to use the concept of Semantic Web for obtaining interoperability between hospitals for extraction and collection of useful medical data.</p>
+
+			  		<p>In a short few months, we were able to build a complete semantic web infrastructure, play with real hospital data and also, <a href="http://www.e-ijaet.org/media/53I11-IJAET1111227-MEDICAL-INFORMATION.pdf" target="_blank">publish a paper</a>.</p>
+
+			   		<div class="ui divider ">
+						</div>
+
+			  		<!--
+			   		<p class="semanticweb_more">
+			   		</p>
+
+			   		<div class="ui horizontal text divider ">
+			   			<span class="semanticweb_button red">More</span>
+						</div>
+						-->
+					</div>
+				</div>
+				
+				<div class="ui two wide column"></div>
+			</div>
+
+			<div class="row">
+				<div class="ui five wide column"></div>
+				
+				<div class="ui six wide column">
+
+					<div class="row more">
+						<div class="ui medium header center aligned">...</div>
+					</div>
+
+					<div class="row">
+			  		<div class="ui small images">
+						  <img class="rounded ui image" src="app/images/bloodplus.png">
+						  <img class="rounded ui image" src="app/images/uctweet_1.png">
+						  <img class="rounded ui image" src="app/images/clique_logo.png">
+						  <img class="rounded ui image" src="app/images/nepali_1.png">
+						  <img class="rounded ui image" src="app/images/cgol_1.png">
+						  <img class="rounded ui image" src="app/images/codeforindia_2.png">
+						  <img class="rounded ui image" src="app/images/codeforindia_2.png">
+						</div>
+					</div>
+				</div>
+				
+				<div class="ui five wide column"></div>
+			</div>
+
+			<div class="row">
+				<div class="ui two wide column"></div>
+				
+				<div class="ui twelve wide column">
+
+					<div class="row">
+			   		<div class="ui divider"></div>
+					</div>
+				</div>
+				
+				<div class="ui two wide column"></div>
+			</div>
+
+			<div class="row" id="life_link" >
+				<div class="ui one wide column"></div>
+				<div class="ui fourteen wide column">
+					<div class="row">
+						<div class="ui sixteen wide column">
+							<div class="ui huge header top-title experience"><span class="text">Life</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="ui one wide column"></div>
+			</div>
+
+			<div class="row">
+				<div class="ui two wide column"></div>
+				
+				<div class="ui twelve wide column">
+
+					<div class="row">
+						<div class="ui huge header title">Philosophy</div>
+						<div class="sub header">
+							<div class="ui medium header subtitle">Inner Self.</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<p>I’m a learner. I love to explore, learn new things in life and create. I learned early to be optimistic on any life events and always take positives from them.</p>
+
+						<p>I am a good son, student, teacher, volunteer, entrepreneur, chief, motivator, explorer, technologist, reader and foodie. I want to be everything else that I have not yet been.</p>
+			  		
+			  		<p>I am constantly learning and trying to be better than my yesterday. I love to have a curious mind and to look at thing from a different perspective. My work ethic mantra would be - <b>Work Smart, Honesty and Responsibility</b>.</p>
+
+			  		<p>One of the ulterior goals of my life is to make a difference in this world by creating things that brings values to others. And while I take daily actions and pursue my passions to accomplish this goal, I’ll also continue my inner quest to understand life, explore this world, and stay curious.</p>
+
+			  		<p><b>Create. Motivate. Live everyday.</b></p>
+
+			  		</p>
+
+			   		<div class="ui divider ">
 						</div>
 					</div>
 				</div>
@@ -352,31 +537,140 @@
 				<div class="ui twelve wide column">
 
 					<div class="row">
-						<div class="ui huge header title">Semantic Web</div>
+						<div class="ui huge header title">Traveling</div>
 						<div class="sub header">
-							<div class="ui medium header subtitle">Join the Payment Revolution</div>
+							<div class="ui medium header subtitle">Finding the meaning of life.</div>
 						</div>
 					</div>
 
 					<div class="row">
-						<img class="ui medium right floated image" src="app/images/payclip.png">
 			  		
-			  		<p>fortystones was a brain-child of five sophomore engineering students to set a platform for outselves to share our knowledge to the world.</p>
 
-			  		<p>Little did we know that our amaetur platform would touch lives of over 550,000 people across 12,000 cities worldwide. From articles to reviews to fortystones lab, we really worked hard to expand our horizons.</p>
+			  		<p>Did I tell you that I <a href="https://www.facebook.com/prashish/media_set?set=a.10154543608460497.1073741837.674180496&type=1">traveled to 40 US State in 25 days</a> to raise awareness about Mozilla and the Open Web? I don't consider myself an avid traveler but I'm love exploring new cities.</p> 
 
-						<p>With fortystones, we tried as younf students, to make a small difference, and we are sure we did play a tiny bit in doing so. Sadly, the platform was dead recently, but we sure are doing our part to continue what we loved doing to learn and share.</p>			   		
-			   		<p class="fortystones_more">
-			   			I can go on and describe the many technical aspects of the work that I did there, but the experience and lessons that I learnt from my internships were the most valuable thing ever. It taught me to be open to options, to have that constant thirst for learning and to always do something meaningful and with value. I spent a large amount of time in designing the best technology stack, writing features and testing. I could feel the evolution of the codebase from the first iteration to the final production code. Every project that I worked had lots of iterations, where I refactored almost the entire code in less than two weeks after the first push. 
-			   		</p>
+			  		<p>I like impromptu weekend plans.</p>
 
-			   		<div class="ui horizontal text divider ">
-			   			<span class="fortystones_button red">More</span>
+						<img class="ui huge image centerimage" src="app/images/prashish_traveling.jpg">
+
+
+			  		<p class="ui medium header center aligned"><b><span class="red-color">41</span> / 50 US States</b></p>
+
+			   		<div class="ui divider ">
 						</div>
 					</div>
 				</div>
 				
 				<div class="ui two wide column"></div>
+			</div>
+
+			<div class="row">
+				<div class="ui two wide column"></div>
+				
+				<div class="ui twelve wide column">
+
+					<div class="row">
+						<div class="ui huge header title">Community Building</div>
+						<div class="sub header">
+							<div class="ui medium header subtitle">Together, we shall.</div>
+						</div>
+					</div>
+
+					<div class="row">
+			  		
+			  		<p>I like the whole idea of being part of communities of passionate people working selflessly towards a common goal.</p> 
+
+			  		<p>We used to organize monthly meetups for <a href="https://www.facebook.com/groups/109070762572263/" target="_blank">PHP Devs</a> in Kathmandu Valley. We did organize few casual hackathons as well.</p>
+
+			  		<p>We also organized the first ever <a href="http://prashish.me/2013/08/08/developers-meet-nepal/ target="_blank"">Developers' Meet Nepal</a> where the focus was to gather all professionals and enthusiasts from all major tech communities in Nepal.</p>
+
+				  		<div class="ui medium images">
+							  <img src="app/images/prashish_hackathon_nepal.jpg">
+							  <img src="app/images/prashish_code_for_india.jpg">
+							  <img src="app/images/prashish_mozilla_reps.jpg">
+							  <img src="app/images/prashish_linkedin_hackathon.jpg">
+							  <img src="app/images/prashish_opendata_hackathon.jpg">
+							  <img src="app/images/prashish_mozillareps_2.jpg">
+							</div>
+
+			   		<div class="ui divider">
+						</div>
+					</div>
+				</div>
+				
+				<div class="ui two wide column"></div>
+			</div>
+			<div class="row">
+				<div class="ui two wide column"></div>
+				
+				<div class="ui twelve wide column">
+
+					<div class="row">
+						<div class="ui huge header title">Cooking</div>
+						<div class="sub header">
+							<div class="ui medium header subtitle">Made with &#9829;</div>
+						</div>
+					</div>
+
+					<div class="row">
+			  		<p>I love experimenting in the kitchen. I've even tried to <i>open-source</i> my recipes with my a self-claimed series - <a href="http://prashish.me/2014/07/11/nepalichicken/" target="_blank">Be Your Own Master Chef (BYOMC) Series</a>. I consider cooking as one of <a href="http://prashish.me/2014/10/22/appreciate-small-things-in-life/" target="_blank">small things in life that I appreciate doing</a>.</p>
+
+						<img class="ui medium image centerimage" src="app/images/prashish_cooking.jpg">
+
+			   		<div class="ui divider">
+						</div>
+					</div>
+				</div>
+				
+				<div class="ui two wide column"></div>
+			</div>
+
+			<div id="contact_link" class="row">
+				<div class="ui three wide column"></div>
+				
+				<div class="ui ten wide column">
+
+					<div class="row more">
+						<div class="ui medium header center aligned">...</div>
+					</div>
+
+					<div class="row">
+			  		<div class="ui small images">
+						  <a href="https://github.com/prashishh" target="_blank"><img class="rounded ui image" src="app/images/github-logo.png"></a>
+						  <a href="http://prashish.me/" target="_blank"><img class="rounded ui image" src="app/images/wordpress-logo.png"></a>
+						  <a href="https://twitter.com/prashishh" target="_blank"><img class="rounded ui image" src="app/images/twitter-logo.jpg"></a>
+						  <a href="www.linkedin.com/in/prashishh/" target="_blank"><img class="rounded ui image" src="app/images/linkedin-logo.png"></a>
+						  <a href="http://instagram.com/prashishh" target="_blank"><img class="rounded ui image" src="app/images/instagram-logo.png"></a>
+						  <a href="https://www.facebook.com/prashish" target="_blank"><img class="rounded ui image" src="app/images/fb-logo.png"></a>
+						  <a href="http://www.quora.com/Prashish-Rajbhandari" target="_blank"><img class="rounded ui image" src="app/images/quora-logo.png"></a>
+						  <a href="https://medium.com/@prashishh" target="_blank"><img class="rounded ui image" src="app/images/medium-logo.png"></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ui three wide column"></div>
+			</div>
+
+	 		<div class="ui divider">
+			</div>
+
+			<div class="row">
+				<div class="ui three wide column"></div>
+				
+				<div class="ui ten wide column">
+
+					<div class="row more">
+						<div class="ui medium header center aligned copyright">© 2013-14 · Prashish Rajbhandari · Made with <a href="http://semantic-ui.com/" target="_blank">Semantic UI</a> &#38; &#9829; ·</div>
+					</div>
+				</div>
+				
+				<div class="ui three wide column"></div>
+			</div>
+			<div class="row">
+				<div class="ui sixteen wide column">
+					<div class="ui up arrow">
+						<a id="link_btn" href="#top_link" class="no-text-decor"> <i class="arrow big up icon"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 

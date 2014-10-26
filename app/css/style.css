@@ -1,15 +1,15 @@
 
 @font-face {
   font-family: "freight-text";
-  src: url(fonts/freight-text-book.ttf);
+  src: url(../../fonts/freight-text-book.ttf);
 }
 
 @font-face {
   font-family: "antique-oakland-bold";
-  src: url(fonts/antique-oakland-bold.ttf);
+  src: url(../../fonts/antique-oakland-bold.ttf);
 }
 
-p, a {
+p, p a, .full_text {
 	font-style: normal;
 	font-family: "freight-text", Georgia;
 	letter-spacing: 0.01rem;
@@ -28,10 +28,30 @@ a {
 	height: 400px;
 }
 
+.ui.header.top-title {
+	font-family: "freight-text", Georgia;
+	font-size: 35px;
+	font-weight: 700;
+	margin: -15px 0 0 0px;
+}
+
+.ui.header.top-title.experience {
+	margin-top: 0px;
+}
+
+.ui.header.projects {
+	margin: -45px 0 -15px 0px;
+}
+
+.ui.header.top-title .text {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
 .ui.header.title {
 	font-family: "freight-text", Georgia;
 	font-size: 35px;
 	margin-bottom: 2px;
+	font-weight: 550;
 }
 
 .ui.header.subtitle {
@@ -54,12 +74,34 @@ a {
 	padding-bottom: 5px;
 }
 
+.ui.up.arrow {
+	position: fixed;
+	bottom: 15px;
+	right: 20px;
+}
+
 .ui.grid > .row {
 	margin-top: -0.5%;
 }
 
 .ui.pointing.menu .item {
 	font-size: 18px;
+}
+
+.ui.grid > .row {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.ui.twelve.wide.column {
+	padding: 0px 10px 0px 10px !important;
+}
+
+.ui.stackable.grid > .column, .ui.stackable.grid > .row > .column  {
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .maincontent {
@@ -83,12 +125,36 @@ a {
 	font-family: "antique-oakland-bold", Georgia;
 }
 
-.centerimage {
-	margin:0 auto;
+.red-color {
+	color: red;
+	font-weight: 700;
+	cursor: pointer;
+	font-family: "antique-oakland-bold", Georgia;
 }
 
+.centerimage {
+	margin: 0 auto;
+}
+
+.ui.right.floated.image.nomargin {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.ui.twelve.wide.column.centeraligned p{
+	text-align: center;
+}
 .ui.horizontal.divider {
 	margin-bottom: 40px;
+}
+
+.ui.medium.image.sidepic {
+	margin-top: 0px;
+	width: 300px;
+}
+
+.ui.medium.image.scoopbanner {
+	width: 75%;
 }
 
 .ui.medium.image.paycliplogo {
@@ -111,4 +177,31 @@ a {
 
 .ui.medium.image.scooplogo {
 	width: 700px ;
+}
+
+.row.more {
+	margin-bottom: 15px;
+}
+
+.no-text-decor {
+	text-decoration: none;
+}
+
+.mozdrive-tweet {
+	width: 530px;
+	height: 110px;
+	margin-top: -15px;
+	padding-bottom: 15px;
+}
+
+.ui.center.aligned.header.copyright {
+	margin-top: -10px;
+	font-family: "freight-text", Georgia;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+
+.ui.center.aligned.header.copyright a{
+	text-decoration: none;
 }
