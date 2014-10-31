@@ -52,16 +52,25 @@ $(function() {
 
 	$(".payclip_button").on('click', function() {
 
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000);
-
 		var remo_displayProp = $(".payclip_more").css("display");
-		if(remo_displayProp == "none")
-			remo_moreLess = 'Less'
-		else 
+		if(remo_displayProp == "none") {
+
+			remo_moreLess = 'Less';
+			$(".payclip_summary").hide();
+	    
+			$root.animate({
+	        scrollTop: $( $.attr(this, 'more') ).offset().top
+	    }, 1000);
+
+		} else {
 			remo_moreLess = 'More';
-		
+			$(".payclip_summary").show();
+
+	    $root.animate({
+	        scrollTop: $( $.attr(this, 'less') ).offset().top
+	    }, 1000);
+		}
+
 		$(this).text(remo_moreLess);
 
 		$(".payclip_more").slideToggle(1000);
@@ -69,15 +78,24 @@ $(function() {
 
 	$(".remo_button").on('click', function() {
 
-    $root.animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000);
-
 		var remo_displayProp = $(".remo_more").css("display");
-		if(remo_displayProp == "none")
-			remo_moreLess = 'Less'
-		else 
+		if(remo_displayProp == "none") {
+			
+			remo_moreLess = 'Less';
+			$(".remo_summary").hide();
+
+	    $root.animate({
+	      scrollTop: $( $.attr(this, 'more') ).offset().top
+	    }, 1000);
+
+		} else {
 			remo_moreLess = 'More';
+			$(".remo_summary").show();
+
+	    $root.animate({
+	      scrollTop: $( $.attr(this, 'less') ).offset().top
+	    }, 1000);
+		} 
 		
 		$(this).text(remo_moreLess);
 
@@ -85,16 +103,24 @@ $(function() {
 	});
 
 	$(".mic_button").on('click', function() {
-
-    $root.animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000);
     
 		var mic_displayProp = $(".mic_more").css("display");
-		if(mic_displayProp == "none")
-			mic_moreLess = 'Less'
-		else 
+		$(".mic_summary").hide();
+
+		if(mic_displayProp == "none") {
+			mic_moreLess = 'Less';
+			$(".mic_summary").hide();
+
+	    $root.animate({
+	      scrollTop: $( $.attr(this, 'more') ).offset().top
+	    }, 1000);
+		} else {
 			mic_moreLess = 'More';
+			$(".mic_summary").show();
+	    $root.animate({
+	      scrollTop: $( $.attr(this, 'less') ).offset().top
+	    }, 1000);
+		}
 		
 		$(this).text(mic_moreLess);
 
@@ -103,20 +129,50 @@ $(function() {
 
 	$(".fortystones_button").on('click', function() {
     
-    $root.animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000);
 
 		var fortystones_displayProp = $(".fortystones_more").css("display");
-		if(fortystones_displayProp == "none")
-			fortystones_moreLess = 'Less'
-		else 
+		$(".fortystones_summary").hide();
+
+		if(fortystones_displayProp == "none") {
+			fortystones_moreLess = 'Less';
+			$(".fortystones_summary").hide();
+
+	    $root.animate({
+	      scrollTop: $( $.attr(this, 'more') ).offset().top
+	    }, 1000);
+		} else {
 			fortystones_moreLess = 'More';
+			$(".fortystones_summary").show();
+
+	    $root.animate({
+	      scrollTop: $( $.attr(this, 'less') ).offset().top
+	    }, 1000);
+		}
 		
 		$(this).text(fortystones_moreLess);
 
 		$(".fortystones_more").slideToggle();
 	});
+
+	$('.masterTooltip').hover(function(){
+  // Hover over code
+  var title = $(this).attr('title');
+  $(this).data('tipText', title).removeAttr('title');
+  $('<p class="tooltip"></p>')
+  .text(title)
+  .appendTo('body')
+  .fadeIn('slow');
+	}, function() {
+    // Hover out code
+    $(this).attr('title', $(this).data('tipText'));
+    $('.tooltip').remove();
+}).mousemove(function(e) {
+    var mousex = e.pageX + 5; //Get X coordinates
+    var mousey = e.pageY + 5; //Get Y coordinates
+    $('.tooltip')
+    .css({ top: mousey, left: mousex })
+	});
+
 });
 
 function arrowVisible() {

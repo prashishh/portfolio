@@ -1,4 +1,5 @@
 
+
 @font-face {
   font-family: "freight-text";
   src: url(../../fonts/freight-text-book.ttf);
@@ -19,7 +20,11 @@ p, p a, .full_text {
 	text-align: justify;
 }
 
-a {
+p.sub-header {
+	margin: 0px 0 20px 0;
+}
+
+a, .no-link {
 	text-decoration: underline;
 	color: #000;
 }
@@ -40,7 +45,7 @@ a {
 }
 
 .ui.header.projects {
-	margin: -45px 0 -15px 0px;
+	margin: -10px 0px 5px;
 }
 
 .ui.header.top-title .text {
@@ -50,6 +55,7 @@ a {
 .ui.header.title {
 	font-family: "freight-text", Georgia;
 	font-size: 35px;
+	margin-top:10px;
 	margin-bottom: 2px;
 	font-weight: 550;
 }
@@ -204,4 +210,48 @@ a {
 
 .ui.center.aligned.header.copyright a{
 	text-decoration: none;
+}
+
+.ui.divider {
+	margin-top:30px;
+}
+
+.ui.divider.nomargin {
+	margin-top: 0px;
+}
+
+.ui.divider.sm {
+	margin-top: 15px;
+}
+
+.ui.small.images.sm img {
+	width: 50px;
+}
+
+.ui.medium.images img {
+	height: 225px;
+}
+
+.ui.medium.images.food img {
+	width: 275px;
+}
+
+.ui.images.sm {
+}
+
+.img-header {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border: 1px solid #333;
+	background-color:#161616;
+	border-radius: 4px;
+	padding: 5px;
+	color:#fff;
+	font-size: 12px;
+	font-family: "freight-text", Georgia;
 }
